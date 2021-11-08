@@ -1,0 +1,34 @@
+<h1># django-blog-primary</h1>
+Um Projeto de Software para um Blog Pessoal, utilizando o Django com Banco de Dados ainda em SQLite3
+
+<h2>COMEÇANDO</h2>
+<p> para iniciarmos o projeto na sua maquina, sera necessário você instalar: </p>
+<ul>
+  <li>Python</li>
+  <li>Django</li>
+</ul>
+<h3> Instalando o Python </h3>
+<p><a href="https://www.python.org/downloads/" target="_blank"> Clique aqui para Instalar o Python</a></p>
+<p> Após instalado o Python é necessário ter o <a href="https://docs.djangoproject.com/en/3.2/" target="_blank"><b>Django</b></a> instalado </p>
+
+<h3> Instalando o Django </h3>
+<p> Para Instalarmos o Django devemos abrir o <b>CMD</b> do Windows ou <b> Terminal do Linux/Unix e dar o seguinte comando :
+<pre>
+  <code>
+    <i>python -m pip install django</i>
+  </code>
+</pre>
+<p> Verifique se o Django foi instalado corretamente na maquina com: </p>
+<pre>
+  <code>
+    <i>django-admin --version </i>
+  </code>
+</pre>
+<p> Caso estiver tudo certo ira aparecer uma Imagem: </p>
+<h2> Executando o Projeto na sua Maquina </h2>
+<p> Após ter passado o Processo de Instalação do Python e Django, iremos iniciar o Projeto na nossa maquina bem simples <b> tudo via CMD: </b></p>
+<pre>
+  <code>
+    
+  </code>
+</pre>
