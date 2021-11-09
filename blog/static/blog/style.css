@@ -5,9 +5,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    background-color: #242424;
 }
-
 li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -21,11 +20,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-}
-
-.logo {
-    cursor: pointer;
-
 }
 
 .nav__links {
@@ -61,33 +55,4 @@ header {
     width: 90%;
     margin: auto;
     padding-top: 90px;
-}
-
-.img-post {
-    width: 560px;
-    height: 315px;
-}
-
-.img-blog {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.post-title h3 {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 39px;
-    margin: auto;
-    width: auto;
-    max-width: auto;
-    line-height: 45px;
-}
-
-.post-title h4 {
-    font-style: italic;
-    margin-bottom: 20px;
-    font-size: 22px;
-    text-align: center;
 }
