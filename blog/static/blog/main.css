@@ -149,33 +149,102 @@ header h1{
 #social-sidebar a[class*="linkedin"] span,
 #social-sidebar a[class*="linkedin"] span:before { background: #007bb6; }
 
-.my-apresentation {
-    position:relative;
-    right: 0;
-    margin-bottom: 50px;
-    text-align: center;
-}
 
-.my-apresentation h2 {
-    margin: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color:rgb(0, 253, 0);
-}
-
-.my-apresentation img{
+.container {
     display: flex;
-    width: 500px;
-    height: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+.card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+}
+
+.tag + .tag {
+    margin-left:. 5rem;
+}
+
+.tag-blue {
+    background: #56CCF2;
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+}
+
+.card__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.user {
+    display: flex;
+    gap: .5rem;
+}
+
+.user__image {
     border-radius: 50%;
-    margin: 1px auto;
+    height: 48px !important;
+    width: 48px  !important;
 }
 
-.my-apresentation h3 {
-    color: #ffffff;
-    margin: 10px 0 5px;
+.user__info > small {
+    color: #666;
 }
 
+.card-link {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+}
+
+.card:hover {
+    color:rgb(13, 95, 105);
+    transition: 0.3s;
+}
+
+.link-post {
+    text-decoration: none;
+    color:rgb(31, 31, 31);
+}
+
+.link-post:hover{
+    text-shadow: rgba(0, 0, 0, 0.1);
+    transition: all 3s;
+}
 
 .center-content {
     margin: auto;
