@@ -1,33 +1,64 @@
 {% load static %}
-<html>
+
+<!DOCTYPE html>
+<html lang="PT-BR">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Blog do Joao">
+    <meta name="author" content="João Damaceno">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/reset.css' %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>{% block title %} Blog{% endblock %}</title>
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}" />
+    <title>{% block title %} Blog {% endblock %}</title>
   </head>
-  <body>
-    <header>
-      <div class="logo-home">
-        <a href="#"><i class="fas fa-home fa-2x"></i></a>
-      </div>
+   <body>
       <nav>
-        <ul class="nav__links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#posts">Posts</a></li>
-          <li><a href="#sobremim">Sobre mim</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Posts</a></li>
+        <li><a href="#">Sobre mim</a></li>
+      </ul>
       </nav>
-        <div class="nav-contacts">
-          <a href="https://github.com/coffeblackpremium"><i class="fab fa-github fa-2x"></i></a>
-          <a href="https://www.linkedin.com/in/jo%C3%A3o-damaceno-martins-da-silva-27b3771b6/"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
-        </div>
+
+      <header>
+        <h1 class="header-titulo">Hello World!</h1>
+        <h2 class="header-sub-titulo">This is my First Blog and Site</h2>
       </header>
-      
+
+      <main>
+        <div class="my-apresentation">
+          <h2 class="my-apresentation-text">Whoami ?</h2>
+          <img src="{% static 'blog/img/perfil_avatar.jpg' %}" alt="profile-photo" />
+          <h3>João Damaceno</h3>
+          <p>Web Developer Python</p>
+        </div>
+        <h2 class="titulo-post">Bem vindo ao Clube</h2>
+        <div class="social-sidebar" id="social-sidebar">
+          <ul>
+            <li>
+              <a class="entypo-github" href="#"><span>Github</span></a>
+            </li>
+            <li>
+              <a class="entypo-linkedin" href="#"><span>Linkedin</span></a>
+            </li>
+            <li>
+              <a class="entypo-twitter" href="#"><span>Twitter</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="center-content">
+          <div class="blog-center-text">
+            <p>Esse básicamente é o meu primeiro Post aqui neste blog. Estou surpreso de ter chegado até aqui, eu nunca imaginaria que a caminhada seria até.. meio dificil
+              técnicamente, nem imaginaria a Dificuldade desta tal "caminhada".
+            </p>
+          </div>
+        </div>
+      </main>
 
   </body>
+
 
 </html>

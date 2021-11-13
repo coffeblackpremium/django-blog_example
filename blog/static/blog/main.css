@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap');
+@import url('https://weloveiconfonts.com/api/?family=entypo');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #f5f6fa;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #352841;
+    font-family: 'Robot', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+  }
+
+header {
+    background-color: black;
+    padding: 130px;
+}
+
+header h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(0, 253, 0)
+}
+
+.header-sub-titulo {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 253, 0)
+
+}
+
+[class^="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+   }
+
+#social-sidebar ul {
+    left: 0;
+    position: fixed;
+    top: 30%;
+}
+
+#social-sidebar li:first-child a {
+    border-top-right-radius: 5px;
+}
+
+#social-sidebar li:last-child a {
+    border-bottom-right-radius: 5px;
+}
+
+#social-sidebar a {
+    background: rgba(0,0,7);
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+#social-sidebar a:hover span {
+    left: 120%;
+    opacity: 1;
+}
+
+#social-sidebar a span{
+    font: 12px "Roboto", sans-serif;
+    text-transform: uppercase;
+    border-radius: 3px;
+    line-height: 24px;
+    left: -100%;
+    margin-top: -16px;
+    opacity: 0;
+    padding: 4px 8px;
+    position: absolute;
+    transition: opacity .3s, left .4s;
+    top: 50%;
+    z-index: -1;
+}
+
+#social-sidebar a span:before {
+    content: "";
+    display: block;
+    height: 8px;
+    width: 8px;
+    left: -4px;
+    margin-top: -4px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+#social-sidebar a[class*="github"]:hover,
+#social-sidebar a[class*="github"] span,
+#social-sidebar a[class*="github"] span:before {background:#9C7A5B; }
+
+#social-sidebar a[class*="twitter"]:hover,
+#social-sidebar a[class*="twitter"] span,
+#social-sidebar a[class*="twitter"] span:before { background: #00aced; }
+
+#social-sidebar a[class*="linkedin"]:hover,
+#social-sidebar a[class*="linkedin"] span,
+#social-sidebar a[class*="linkedin"] span:before { background: #007bb6; }
+
+.my-apresentation {
+    position:relative;
+    right: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.my-apresentation h2 {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(0, 253, 0);
+}
+
+.my-apresentation img{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    border-radius: 50%;
+    margin: 1px auto;
+}
+
+.my-apresentation h3 {
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+
+.center-content {
+    margin: auto;
+    width: 50%;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+}
+
+.titulo-post {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.blog-center-text {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+
+}
