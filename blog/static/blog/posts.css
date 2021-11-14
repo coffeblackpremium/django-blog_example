@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap');
+/* fonte Open-sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
 @import url('https://weloveiconfonts.com/api/?family=entypo');
 
 * {
@@ -11,6 +13,7 @@
 
 body{
     background: #f5f6fa;
+    text-rendering: optimizeSpeed;
 }
 
 nav {
@@ -51,8 +54,13 @@ nav ul li a:hover {
   }
 
 header {
-    background-color: black;
+    background-image: url("img/helloworldcover.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
     padding: 130px;
+    
 }
 
 header h1{
@@ -149,135 +157,29 @@ header h1{
 #social-sidebar a[class*="linkedin"] span,
 #social-sidebar a[class*="linkedin"] span:before { background: #007bb6; }
 
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin-block: 2rem;
-    gap: 2rem;
+.content-post {
+    font-size: 1.2rem;
+    background: #fafafa;
+    color: #000;
+    overflow-wrap: break-word;
+    border-radius: 8px;
+    border-style: solid;
+    padding: 0 245px;
+    margin: 0 auto;
+    position: relative;
 }
-
-.card__header_img {
-    max-width: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    width: clamp(20rem, calc(20rem + 2vw), 22rem);
-    overflow: hidden;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 1rem;
-    background: #ECE9E6;
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-}
-
-.card__body {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.tag {
-    align-self: flex-start;
-    padding: .25em .75em;
-    border-radius: 1em;
-    font-size: .75rem;
-}
-
-.tag + .tag {
-    margin-left: .5rem;
-}
-
-.tag-blue {
-    background: #56CCF2;
-    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
-    color: #fafafa;
-}
-
-.tag-brown {
-    background: #D1913C;
-    background: linear-gradient(to bottom, #FFD194, #D1913C);
-    color: #fafafa;
-}
-
-.tag-red {
-    background: #cb2d3e;
-    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-    color: #fafafa
-}
-
-.card__body h4 {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-}
-
-.card__footer {
-    display: flex;
-    padding: 1rem;
-    margin-top: auto;
-}
-
-.user {
-    display: flex;
-    gap: .5rem;
-}
-
-.user__image {
-    border-radius: 50%;
-    height: 52px !important;
-    width: 52px  !important;
-}
-
-.user__info > small {
-    color: #666;
-}
-
-.card-link {
-    text-decoration: none;
-    color: #666;
-    font-weight: bold;
-}
-
-.card:hover {
-    color:rgb(13, 95, 105);
-    transition: 0.3s;
-}
-
-.link-post {
-    text-decoration: none;
-    color:rgb(31, 31, 31);
-}
-
-.link-post:hover{
-    text-shadow: rgba(0, 0, 0, 0.1);
-    transition: all 3s;
-}
-
-.center-content {
-    margin: auto;
-    width: 50%;
-    border: 1px solid rgb(70, 70, 70);
-    border-radius: 10px;
-}
-
-.titulo-post {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    padding: 10px 0;
-}
-
-.blog-center-text {
+.content-post h1 {
+    margin: 25px 0 0 0;
+    padding: 3px;
+    font-size: 48px;
     font-family: "Roboto", sans-serif;
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
+    font-weight: bold;
+}
 
+.content-post p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-family: "Open-Sans", sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
