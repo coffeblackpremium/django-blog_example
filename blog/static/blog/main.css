@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap');
 @import url('https://weloveiconfonts.com/api/?family=entypo');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap');
 
 * {
     margin: 0px;
@@ -52,15 +53,30 @@ nav ul li a:hover {
 
 header {
     background-color: black;
-    padding: 130px;
+    padding: 30px;
 }
 
 header h1{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto Condesed", sans-serif;
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 5rem;
     text-align: center;
-    color: rgb(0, 253, 0)
+    color: #fff;
+    margin: 0;
+}
+
+.icon-wrapper {
+    display: inline-block;
+    margin:auto;
+    padding: 5px;
+    background: #fff;
+    line-height: 0;
+    border-radius: 50%;
+    box-shadow: 0px 4px 12px rgb(0 0 0 / 25%);
+    margin-bottom: 3rem;
+    height: 280px;
+    width: 280px;
 }
 
 .header-sub-titulo {
@@ -149,12 +165,11 @@ header h1{
 #social-sidebar a[class*="linkedin"] span,
 #social-sidebar a[class*="linkedin"] span:before { background: #007bb6; }
 
-
-.container {
+.container__card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 810px;
     margin-block: 2rem;
     gap: 2rem;
 }
@@ -266,18 +281,18 @@ header h1{
     border-radius: 10px;
 }
 
-.titulo-post {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    padding: 10px 0;
+.blog-post-content {
+    display: block;
+    max-width: 810px;
+    font-weight: 400;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.blog-center-text {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
-
+.blog-post-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+    font-weight: 400;
 }

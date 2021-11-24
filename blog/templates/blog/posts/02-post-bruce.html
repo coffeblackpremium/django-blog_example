@@ -1,7 +1,21 @@
-{% extends 'blog/posts/helloworld.html' %}
+{% extends 'partials/index.html' %}
+{% load static %}
 
 {% block content %}
-
+<html>
+    <header style="background: #222f3e;">
+        <img class="icon-wrapper" src="{% static 'blog/img/brucelee_icon.jpg' %}" width="90%" />
+        <h1>Seja como a Água amigo</h1>
+    </header>
+    <body>
+        <div class="container post-container">
+            <div class="blog-post-content">
+                <p>Eae Pessoal estou aqui para mostrar novamente como este blog 
+                    está <strong> E esta sensacional </strong></p>
+            </div>
+        </div>
+    </body>
+</html>
 
 
 {% endblock %}
