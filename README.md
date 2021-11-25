@@ -29,6 +29,7 @@ Um Projeto de Software para um Blog Pessoal, utilizando o Django com Banco de Da
 <p> Após ter passado o Processo de Instalação do Python e Django, iremos iniciar o Projeto na nossa maquina bem simples <b> tudo via CMD: </b></p>
 <pre>
   <code>
-    
+    python manage.py runserver
   </code>
 </pre>
+  <p> Feito isso, o Site estara disponível para Executar na sua maquina! </p>
