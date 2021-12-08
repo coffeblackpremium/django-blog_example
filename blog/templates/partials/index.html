@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <!DOCTYPE html>
 <html lang="PT-BR">
   <head>
@@ -14,87 +15,15 @@
     <title>{% block title %} Blog {% endblock %}</title>
   </head>
    <body>
-     <!--Barra de Navegação Principal-->
-      <nav>
-      <ul class="nav-links">
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="#">Posts</a></li>
-        <li><a href="#">Sobre mim</a></li>
-      </ul>
-      </nav>
-      <!--Sidebar das Redes sociais-->
-      <div class="social-sidebar" id="social-sidebar">
-        <ul>
-          <li>
-            <a class="entypo-github" href="#"><span>Github</span></a>
-          </li>
-          <li>
-            <a class="entypo-linkedin" href="#"><span>Linkedin</span></a>
-          </li>
-          <li>
-            <a class="entypo-twitter" href="#"><span>Twitter</span></a>
-          </li>
-        </ul>
-      </div>
-      <!--Header da Página-->
+     {% include 'partials/navbar.html' %}
       {% block content %}
       <header>
         <h1 class="header-titulo">Hello World!</h1>
         <h2 class="header-sub-titulo">This is my First Blog and Site</h2>
       </header>
     <main>
-        <!--Blocos dos Post-->
-        <div class="container__card">
-          <div class="card">
-            <div class="card__header">
-              <a href="{% url 'post_helloworld' %}" class="link-post">
-                <img class="card__header_img" src="{% static 'blog/img/header_do_home.jpg' %}" alt="card__image" />
-              </a>
-            </div>
-            <div class="card__body">
-              <span class="tag tag-blue">Technologia</span>
-              <h4><a class="link-post" href="#">Hello  World!</a></h4>
-              <p>O que eu esperaria desse meu primeiro post no Blog ? É surreal a quantidade de coisas que você pode fazer com a programação. O motivo
-                que me levou a estudar a computação e também outras coisas..
-              </p>
-            </div>
-              <div class="card__footer">
-                <div class="user">
-                  <img src="{% static 'blog/img/perfil_avatar.jpg' %}" alt="user__image" class="user__image">
-                  <div class="user__info">
-                    <h5>João Damaceno</h5>
-                    <small>13 de Nov, 2021</small>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="card">
-            <div class="card__header">
-              <a href="{% url 'post_brucelee' %}" class="link-post">
-                <img class="card__header_img" src="{% static 'blog/img/BLee6.jpg' %}" alt="bruce_lee_image" />
-              </a>
-            </div>
-            <div class="card__body">
-              <span class="tag tag-brown">Filosofia</span>
-              <h4><a class="link-post" href="{% url 'post_brucelee' %}">Seja como a Agua, meu amigo.</a></h4>
-              <p>"Não se coloque dentro de uma forma, se adapte e construa sua própria, e deixa-a expandir, como a água.
-                A água pode fluir ou pode Colidir. Seja água, meu amigo" - Bruce lee
-              </p>
-            </div>
-            <div class="card__footer">
-              <div class="user">
-                <img src="{% static 'blog/img/perfil_avatar.jpg' %}" alt="user__image" class="user__image">
-                <div class="user__info">
-                  <h5>João Damaceno</h5>
-                  <small>14 de Nov, 2021</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% include 'partials/cardbar.html' %}
     </main>
-
   </body>
   {% endblock %}
 

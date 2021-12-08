@@ -4,6 +4,6 @@ from blog import views
 
 urlpatterns = [
     path('', views.home, name="home"),
-    path('helloworld/', views.helloworld, name="post_helloworld"),
-    path('seja_agua_amigo/', views.post_brucelee, name="post_brucelee"),
+    path('post/comandosbasicoparalinux', views.linux_basico, name="post_linux_basico"),
+    path('post/sejacomoaagua', views.post_brucelee, name="post_brucelee"),
 ]

@@ -1,0 +1,26 @@
+{% load static %}
+{% block content %}
+<!--Barra de Navegação Principal-->
+<nav>
+    <ul class="nav-links">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="#">Posts</a></li>
+      <li><a href="#">Sobre mim</a></li>
+    </ul>
+    </nav>
+    <!--Sidebar das Redes sociais-->
+    <div class="social-sidebar" id="social-sidebar">
+      <ul>
+        <li>
+          <a class="entypo-github" href="#"><span>Github</span></a>
+        </li>
+        <li>
+          <a class="entypo-linkedin" href="#"><span>Linkedin</span></a>
+        </li>
+        <li>
+          <a class="entypo-twitter" href="#"><span>Twitter</span></a>
+        </li>
+      </ul>
+    </div>
+{% endblock %}
+    <!--Header da Página-->

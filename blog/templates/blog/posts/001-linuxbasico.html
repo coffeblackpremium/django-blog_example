@@ -1,0 +1,52 @@
+{% extends 'partials/index.html' %}
+{% load static %}
+
+{% block content %}
+<html>
+    <body>
+        <header style="background: #022D0F">
+            <img class="icon-wrapper" src="{%static 'blog/img/001-linuxbasico/terminallinux.png' %}" />
+            <h1>Comandos básicos para Linux</h1>
+        </header>
+        <div class="container post-container">
+            <div class="blog-post-content">
+                <p class="primary-paragrapher">
+                Com um aumento estrondoso de Usuarios, o linux vem cada dia a mais conquistando mais espaço para pessoas que estão se aprofundando
+                em uma nova aventura, seja para Trabalho e estudo, ou até mesmo, para Lazer e Pessoal.
+                </p>
+                <p>Atualmente, existem diversas distribuições Linux, cada uma com sua particularidade e diferenças, uma vantagem aqui outra vantagem ali, mas em Geral, há uma coisa que é 
+                    sempre estática: Os comandos Terminais Linux (Lógico, isto é, excluindo os comandos de Gerenciadores de Pacotes que isto seria assunto para outro Post).
+                </p>
+                <p>
+                    Nesta postagem, irei listar para vocês alguns comandos básicos para você manipular no seu dia-a-dia. Seja como eu disse, para Trabalho, Estudos e também para Lazer.
+                </p>
+                <h2>Whoami</h2>
+                <p>
+                    Ao Digitar o comando Whoami no seu terminal Linux, ele ira mostrar
+                    qual usuario está logado no sistema, por exemplo:
+                </p>
+                <img src="{% static 'blog/img/001-linuxbasico/whoami.png' %}" alt="whoami" width="500" height="200"/>
+                <p>
+                    no Exemplo acima, vimos que ao digitar "Whoami" o terminal nos retorna "joaod",
+                    isto acontece porque joad é um dos usuarios da minha Maquina.
+                </p>
+                <h2>PWD</h2>
+                <p>O PWD digitado no Terminal, ele ira mostrar em que pasta você está no Terminal.
+                </p>
+                <img src="{% static 'blog/img/001-linuxbasico/pwd.png' %}" alt="pwd" width="500" height="200" />
+                <p>
+                    É um comando muito utilizado e muito util para o nosso dia-a-dia. Ajudando a gente
+                    caso se perdessemos no "terminal"
+                </p>
+                <h2>Change Directory (CD)</h2>
+                <p>
+                   Se quisermos ir para uma determinada pasta, bastamos utilizar o comando CD + nome da pasta
+                </p>
+                <img src="{% static 'blog/img/001-linuxbasico/cd.png' %}" alt="change_directory" width="500" height="200" />
+
+        </div>
+    </body>
+</html>
+
+
+{% endblock %}
