@@ -312,3 +312,31 @@ header h1{
     justify-content: center;
     margin: 20px 0 0 0;
 }
+
+.blog-post-content h3{
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.0rem;
+    line-height: 1.6;
+    margin: 50px 0 50px 0;
+}
+
+.direto-ao-ponto a {
+    text-decoration: none;
+    color:black;
+}
+
+.direto-ao-ponto li {
+    padding: 5px;
+}
+.direto-ao-ponto li a {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+.direto-ao-ponto a:hover {
+    color: #8ae6fa;
+}
+.direto-ao-ponto ul li a,
+.direto-ao-ponto ul li a:after,
+.direto-ao-ponto ul li a:before {
+  transition: all .5s;
+}

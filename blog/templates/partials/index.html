@@ -1,6 +1,5 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html lang="PT-BR">
   <head>
@@ -15,14 +14,16 @@
     <title>{% block title %} Blog {% endblock %}</title>
   </head>
    <body>
-     {% include 'partials/navbar.html' %}
+     <!--Barra de Navegação Principal-->
+      {% include 'partials/navbar.html' %}
+      <!--Header da Página-->
       {% block content %}
       <header>
         <h1 class="header-titulo">Hello World!</h1>
         <h2 class="header-sub-titulo">This is my First Blog and Site</h2>
       </header>
     <main>
-      {% include 'partials/cardbar.html' %}
+       {% include 'partials/cardbar.html' %}
     </main>
   </body>
   {% endblock %}

@@ -1,6 +1,6 @@
 {% extends 'partials/index.html' %}
 {% load static %}
-
+<!DOCTYPE html>
 {% block content %}
 <html>
     <body>
@@ -10,7 +10,7 @@
         </header>
         <div class="container post-container">
             <div class="blog-post-content">
-                <p class="primary-paragrapher">
+                <p>
                 Com um aumento estrondoso de Usuarios, o linux vem cada dia a mais conquistando mais espaço para pessoas que estão se aprofundando
                 em uma nova aventura, seja para Trabalho e estudo, ou até mesmo, para Lazer e Pessoal.
                 </p>
@@ -20,7 +20,15 @@
                 <p>
                     Nesta postagem, irei listar para vocês alguns comandos básicos para você manipular no seu dia-a-dia. Seja como eu disse, para Trabalho, Estudos e também para Lazer.
                 </p>
-                <h2>Whoami</h2>
+                <div class="direto-ao-ponto">
+                    <h3>Vá direto ao Ponto: </h3>
+                    <ol>
+                        <li><a href="#whoami">• Whoami - Quem esta logado no Terminal</a></li>
+                        <li><a href="#pwd">• PWD - Qual pasta você está</a></li>
+                        <li><a href="#change-directory">• CD - Navegar nas pastas</a></li>
+                    </ol>
+                </div>
+                <h2 id="whoami">Whoami</h2>
                 <p>
                     Ao Digitar o comando Whoami no seu terminal Linux, ele ira mostrar
                     qual usuario está logado no sistema, por exemplo:
@@ -30,7 +38,8 @@
                     no Exemplo acima, vimos que ao digitar "Whoami" o terminal nos retorna "joaod",
                     isto acontece porque joad é um dos usuarios da minha Maquina.
                 </p>
-                <h2>PWD</h2>
+
+                <h2 id="pwd">PWD</h2>
                 <p>O PWD digitado no Terminal, ele ira mostrar em que pasta você está no Terminal.
                 </p>
                 <img src="{% static 'blog/img/001-linuxbasico/pwd.png' %}" alt="pwd" width="500" height="200" />
@@ -38,7 +47,8 @@
                     É um comando muito utilizado e muito util para o nosso dia-a-dia. Ajudando a gente
                     caso se perdessemos no "terminal"
                 </p>
-                <h2>Change Directory (CD)</h2>
+
+                <h2 id="change-directory">Change Directory (CD)</h2>
                 <p>
                    Se quisermos ir para uma determinada pasta, bastamos utilizar o comando CD + nome da pasta
                 </p>
