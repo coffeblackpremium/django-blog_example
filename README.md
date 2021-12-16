@@ -1,4 +1,4 @@
-<h1> 💻 Django Blog Example 💻</h1>
+<h1 align="center"> 💻 Django Blog Example 💻</h1>
 Um Projeto de Software para um Blog Pessoal, utilizando o Django com Banco de Dados ainda em SQLite3 😊
 
 <h2>COMEÇANDO</h2>
