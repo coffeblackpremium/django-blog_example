@@ -1,5 +1,7 @@
 <h1 align="center"> 💻 Django Blog Example 💻</h1>
 <p align="center">Um Projeto de Software para um Blog Pessoal, utilizando o Django com Banco de Dados ainda em SQLite3 😊 </p>
+<img align="center" src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+<img align="center" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white />
 
 <h2>COMEÇANDO</h2>
 <p align="center"> para iniciarmos o projeto na sua maquina, sera necessário você instalar: </p>
