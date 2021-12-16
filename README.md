@@ -2,7 +2,7 @@
 Um Projeto de Software para um Blog Pessoal, utilizando o Django com Banco de Dados ainda em SQLite3 😊
 
 <h2>COMEÇANDO</h2>
-<p> para iniciarmos o projeto na sua maquina, sera necessário você instalar: </p>
+<p align="center"> para iniciarmos o projeto na sua maquina, sera necessário você instalar: </p>
 <ul>
   <li>Python</li>
   <li>Django</li>
